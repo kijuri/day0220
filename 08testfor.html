@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08testfor.html</title>
+
+    <style>
+        * {
+            font-size: 20pt;
+        }
+    </style>
+
+    <script>
+        function mynumber() {
+            var su = 0, result = ' ';
+            for (var cnt = 1; cnt <= 10; cnt = cnt + 1) {
+                su = su + 1;
+                // document.write(su, ' ');
+
+                result = result + su + ' ';
+                document.getElementById('display').innerHTML = result;
+            }
+        }//end
+    </script>
+</head>
+
+<body>
+    <h2> 08testfor.html </h2>
+    <button onclick="mynumber()">1~5출력</button>
+    <form>
+        <img src="./images/main_4.jpg" width="500" height="100">
+        <div id="display"></div>
+
+    </form>
+</body>
+
+</html>
