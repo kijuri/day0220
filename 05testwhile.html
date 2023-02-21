@@ -1,36 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>05testwhile.html</title>
-    <style>
-        * {
-            font-size: 20pt;
-        }
-    </style>
+<style> *{font-size: 20pt;} </style>
 
-    <script>
-        function mygugudan() {
-
-            var dan = 7, k = 0, gugudan = 0;
-            document.write('gugudan=' + dan,'<br>');
-            while (k < 10) {
-                k = k + 1;
-                if (k == 10) { break; }
-                document.write(dan, '*', k, '=', (dan * k),'<br>');
-            }
-        }
-    </script>
+<script>
+  function mygugudan(){
+    var j=0, dan=7;
+    document.write(dan,'구구단출력 while반복문예제<br>');
+    while(j<10){
+      j=j+1;
+      document.write(dan,'*',j,'=',(j*dan),'<br>');
+    }//whil end
+  }//end 
+</script>
 </head>
-
 <body>
-
-    <h2> 05testwhile.html </h2>
-    <button onclick="mygugudan()">구구단</button>
-
+    <h2>05testwhile.html</h2>
+    <button onclick="mygugudan()"> while구구단출력 </button>
 </body>
-
 </html>

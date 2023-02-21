@@ -17,7 +17,7 @@
 	.absolute {
 		position: absolute;
 		right: 0;
-		width: 213px;
+		width: 235px;
 		height: 180px;
 		background-image: url('images/bgpizza.jpg');
 		background-position: right;
@@ -26,7 +26,7 @@
 
 <script>
 	function changePizzaL(name) {
-		var filename = "url('images/" + name + ".jpg')";  
+		var filename = "url('images/" + name + ".jpg')"; 
 		preview_l.style.backgroundImage = filename; //성공
 	}
 	
@@ -35,6 +35,9 @@
 		preview_r.style.backgroundImage = filename; //성공
 	}
 
+	function welcome(userid){
+		alert('환영합니다 미스터피자 방문을 진심으로 감사드립니다');
+	}
 
     function mycal(){
        var data='',  info='', msg='' ;
@@ -43,10 +46,11 @@
 </script>
 </head>
 
-<p> <b> 미스터음료 & 미스터안주피자</b>
+<p> <b> 미스터음료 & 미스터안주 </b>
 <div id="preview_l" class="relative">
 	<div id="preview_r" class="absolute"> </div>
 </div>
+
 
 <body>
     <h1> <font color="green"> 🍺슬기로운 음주생활🍺 </font></h1>
@@ -60,7 +64,7 @@
 			</tr>
 			<tr>
 			<td width = 80>
-				<select name="drink" onclick="changePizzaL(value)">
+				<select name="drink"  onchange="changePizzaL(value)">
 					<option value=""> ---음료를 선택하세요--- </option>
                     <option value="소주"> 소주(3000원)</option>
                     <option value="맥주"> 맥주(2000원)</option>
@@ -71,7 +75,7 @@
 				<input type="text" name="count1">
 			</td>
             <td width = 80>
-                <select name="anju" onclick="changePizzaR(value)">
+                <select name="anju"  onchange="changePizzaR(value)">
 					<option value=""> ---안주를 선택하세요--- </option>
                    <option value="제육볶음"> 제육볶음(8000원)</option>
                    <option value="두부김치"> 두부김치(10000원)</option>
